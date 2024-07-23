@@ -1,0 +1,171 @@
+/* styles.css */
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.simple-wrapper {
+    display: flex;
+    position: center;
+    align-items: center; /* Align items at the top */
+    justify-content: space-between; /* Space between images and text */
+    margin: 20px;
+    font-size: 20px;
+}
+.image-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between images and text */
+    margin: 20px 0;
+}
+
+.left-image, .right-image {
+    width: 25%; /* Adjust width as needed */
+    height: auto;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.text-content {
+    width: 60%; /* Adjust width as needed to ensure text isn't squished */
+    font-size: 20px;
+    text-align: center; /* Center the text within its container */
+}
+.quiz {
+    margin: 20px 0;
+}
+
+/* Ensure container aligns content properly */
+.image-text-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+hr {
+    border: 3px solid #014687;
+}
+.bg-blue {
+    background-color: #014687;
+    color: white;
+}
+.custom-navbar .navbar-nav .nav-link {
+    color: white;
+    padding: 10px 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.custom-navbar .navbar-nav .nav-link:hover,
+.custom-navbar .navbar-nav .nav-link:focus {
+    background-color: #6595c4; /* Slightly darker blue for hover */
+    color: white;
+}
+.custom-navbar .navbar-nav .nav-link.active {
+    background-color: #ffffff; /* White background for the active page */
+    color: #000000; /* Black text for the active page */
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.form-check-input {
+    text-align: left;
+}
+.centered-text-list {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+.centered-text-list li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    filter: blur(4px);
+    top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: -1;
+}
+.background {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.background .content {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-align {
+    text-align: left;
+}
+.blue-fill {
+    height: 100px;
+    background-color: #014687;
+}
+.white {
+    color: black;
+}
+p {
+    padding: 10px;
+}
+a {
+    color: #014687;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #00284a; /* Darker shade of blue on hover */
+}
+footer {
+    background-color: #f5f5f5;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .background {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+.bg-background {
+    background-color: #f5f5f5;
+}

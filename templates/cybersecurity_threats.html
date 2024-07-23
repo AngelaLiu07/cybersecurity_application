@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cybersecurity Threats
+{% endblock %}
+
+{% block main %}
+    <div class="background">
+        <img class="img-fluid" src="https://scx2.b-cdn.net/gfx/news/2015/healthyelder.jpg">
+        <div class="content">
+            <h1>Empowering Seniors with Cybersecurity</h1>
+            <p>Protecting Their Peace of Mind</p>
+        </div>
+    </div>
+    <hr>
+
+    <h2><strong>What are the Types of Cybersecurity?</strong></h2>
+
+    <div class="simple-wrapper">
+        <img src="{{ url_for('static', filename='images/malware-297722_1280.png') }}" alt="Malware" class="left-image">
+        <div class="text-content">
+            <h3><strong>Malware</strong></h3>
+            <ul class="centered-text-list">
+                <li>Code designed to gain access to personal information</li>
+            </ul>
+            <h3><strong>Viruses</strong></h3>
+            <ul class="centered-text-list">
+                <li>A type of malware that corrupts your device</li>
+            </ul>
+            <h3><strong>Ransomware</strong></h3>
+            <ul class="centered-text-list">
+                <li>A form of malware that demands money to remove a virus from your device</li>
+            </ul>
+            <h3><strong>Phishing</strong></h3>
+            <ul class="centered-text-list">
+                <li>Attempts to get sensitive information such as usernames, passwords, and credit card details</li>
+            </ul>
+            <h3><strong>Spam Messages or Calls</strong></h3>
+            <ul class="centered-text-list">
+                <li>Messages or calls sent out in bulk with harmful intent</li>
+            </ul>
+        </div>
+        <img src="{{ url_for('static', filename='images/to-hack-7109362_1280.png') }}" alt="Hack" class="right-image">
+    </div>
+    <hr>
+    <footer class="left-align">
+        <a href="https://www.ibm.com/topics/cybersecurity">Information provided by IBM</a>
+    </footer>
+
+{% endblock %}

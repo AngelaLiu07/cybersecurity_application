@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block main %}
+    <div class="background">
+        <img class="img-fluid" src="https://scx2.b-cdn.net/gfx/news/2015/healthyelder.jpg" alt="Elderly person using technology">
+        <div class="content">
+            <h1>Empowering Seniors with Cybersecurity</h1>
+            <p>Protecting Their Peace of Mind</p>
+        </div>
+    </div>
+    <hr>
+    <h2><strong>What is Cybersecurity?</strong></h2>
+    <div class="image-text-wrapper">
+        <img src="static\images\keys-8877747_1280.png" alt="keys" class="left-image">
+        <div>
+            <p>Cybersecurity refers to any measures that are put into effect to protect yourself online.</p>
+            <p>By 2025, cybercrime can cost the world economy as much as <strong>10.5 trillion U.S. dollars.</strong></p>
+        </div>
+        <img src="{{ url_for('static', filename='images/cybersecurity-6949298_1280.png') }}" alt="thief on a computer" class="right-image">
+    </div>
+    <div class="video-container">
+        <iframe width="929" height="523" src="https://www.youtube.com/embed/JpfEBQn2CjM" title="Pause, think and act - Cyber security awareness video - Security Quotient" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <footer class="left-align"><a href="https://www.ibm.com/topics/cybersecurity">Information provided by IBM</a></footer>
+{% endblock %}

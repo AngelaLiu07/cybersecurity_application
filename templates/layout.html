@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/styles.css">
+        <title>Cybersecurity Awareness: {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-blue custom-navbar">
+            <div class="container-fluid justify-content-between">
+                <button class="navbar-dark navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-dark navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link {% if active_page == 'index' %}active{% endif %}" href="/">Cybersecurity Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if active_page == 'types_of_cybersecurity' %}active{% endif %}" href="/types_of_cybersecurity">Types of Cybersecurity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if active_page == 'cybersecurity_threats' %}active{% endif %}" href="/cybersecurity_threats">Cybersecurity Threats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if active_page == 'action' %}active{% endif %}" href="/action">Steps to Take</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="navbar-brand ms-auto" href="/">
+                <img src="https://cspseniors.wordpress.com/wp-content/uploads/2024/06/image-1.jpg?w=1005" height="30" alt="Logo">
+            </a>
+            <!-- Start of Tawk.to Script -->
+            <script>
+                window.embeddedChatbotConfig = {
+                chatbotId: "DfXSRS5XBaxR-i3Nz5EEi",
+                domain: "www.chatbase.co"
+                }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="DfXSRS5XBaxR-i3Nz5EEi"
+            domain="www.chatbase.co"
+            defer>
+            </script>
+            <!-- End of Tawk.to Script -->
+        </nav>
+        {% if get_flashed_messages() %}
+        <header>
+            <div class="alert alert-primary mb-0 text-center" role="alert">
+                {{ get_flashed_messages() | join(" ") }}
+            </div>
+        </header>
+        {% endif %}
+        <main class="container py-5 text-center" flex-fill>
+            {% block main %}{% endblock %}
+        </main>
+        <footer class="bg-background text-center py-3 mt-auto">
+            <p>For <a class="white" href="https://cspseniors.wordpress.com/">CSPS</a> | &copy; 2024 Angela Liu. All rights reserved. For permissions and inquiries, contact: <a href="mailto:angelasliu2025@gmail.com">angelasliu2025@gmail.com</a></p>
+        </footer>  
+    </body>
+</html>
